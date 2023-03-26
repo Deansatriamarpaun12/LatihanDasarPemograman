@@ -1,0 +1,79 @@
+# Cara Soal No 2
+print("Cara 1")
+a = 50.000
+b = 10.000
+c = 5.000
+
+hasil = a * 16 + b * 15 + c * 3
+print(a,'*',16,'+',b,'*',15,'+',c,'*',3,'=', hasil)
+
+print("Cara 2")
+total_hari = 31
+total_tabung = 0
+
+tanggal = 1
+while(tanggal <= total_hari):
+    if(tanggal % 5 == 0):
+        total_tabung += 5000
+    elif(tanggal % 2 != 0):
+        total_tabung += 50000
+    else:
+        total_tabung += 10000
+
+    tanggal += 1
+
+print("total_tabung: ", total_tabung)
+Cara 1
+50.0 * 16 + 10.0 * 15 + 5.0 * 3 = 965.0
+Cara 2
+total_tabung:  800000
+Soal 3
+Saat hari raya, Deni ingin menukarkan uang sejumlah Rp 5.000.000 ke pecahan 20rb, 10rb, 5rb, 2rb. berapa jumlahnya yang didapatkan Deni jika 20rb maksimal 100, 10rb maksimal 50.Jika :
+3(a)Semua pecahan harus ada
+3(b)Hanya pecahan 20rb, 10rb dan 5rb
+3(c)Hanya pecahan 20rb, 10rb dan 2rb
+Analyze Here
+.....
+#Code here
+rupiah_20 = 20_000 * 100
+rupiah_10 = 10_000 * 50
+rupiah_5 = 5000 * 400
+rupiah_2 = 2000 * 250
+jumlah_3_a = rupiah_20 + rupiah_10 + rupiah_5 + rupiah_2 
+
+print("semua pecahan ada")
+print("100 lembar 20 rbu = ", rupiah_20)
+print("50 lembar 10 rbu = ", rupiah_10)
+print("400 lembar 5 rbu = ", rupiah_5)
+print("250 lembar 2 rbu = ", rupiah_2)
+
+rupiah_5_2 = 5000 * 500
+jumlah_3_b = rupiah_20 + rupiah_10 + rupiah_5_2
+print("hanyalah pecahan 20rbu, 10 rbu, dan 5rbu")
+print("100 lembar 20 rbu = ", rupiah_20)
+print("50 lembar 10 rbu = ", rupiah_10)
+print("400 lembar 5 rbu = ", rupiah_5)
+print("totalnya adalah =", jumlah_3_b)
+
+rupiah_2_2 = 2000 * 1250
+jumlah_3_c = rupiah_20 + rupiah_10 + rupiah_2_2
+print("hanyalah pecahan 20rbu, 10 rbu, dan 2rbu")
+print("100 lembar 20 rbu = ", rupiah_20)
+print("50 lembar 10 rbu = ", rupiah_10)
+print("1250 lembar 2 rbu = ", rupiah_2)
+print("totalnya adalah =", jumlah_3_c)
+semua pecahan ada
+100 lembar 20 rbu =  2000000
+50 lembar 10 rbu =  500000
+400 lembar 5 rbu =  2000000
+250 lembar 2 rbu =  500000
+hanyalah pecahan 20rbu, 10 rbu, dan 5rbu
+100 lembar 20 rbu =  2000000
+50 lembar 10 rbu =  500000
+400 lembar 5 rbu =  2000000
+totalnya adalah = 5000000
+hanyalah pecahan 20rbu, 10 rbu, dan 2rbu
+100 lembar 20 rbu =  2000000
+50 lembar 10 rbu =  500000
+1250 lembar 2 rbu =  500000
+totalnya adalah = 5000000
